@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="basic-dice game">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js/playing.js"></script>
+    <script src="./index.js/reset.js"></script>
+    <script src="index.js/start.js"></script>
+</head>
+<body>
+    <header id="header">
+    <h1> Who is <span>Lucky</span> ?</h1>
+    <p>
+        <h2>How can you play</h2>
+        <p>click the start button..Read who start first...click on your position...
+            red(player1) or green(player2)...The one who got 50 points first is the winner.</p>
+    </p>
+    <button id="start">start</button>
+</header>
+<button id="reset">Back</button> 
+<p id="p"> </p>
+  <section>
+      
+      <div id="player1">
+         <div id="currentResult1"></div>
+        <button id="button1"> Player1</button>
+        <div id ="div1">0</div>
+
+         
+      </div>
+      <div id="player2">
+        <div id="currentResult2"></div>
+        <button id="button2">Player2</button>
+        <div id ="div2">0</div>
+      </div>
+     
+  </section> 
+  <article id="article">
+      <div id="finalResult"></div>
+  </article>
+
+
+<script src="./index.js/listener.js"></script>
+</body>
+</html>
