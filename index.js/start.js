@@ -14,6 +14,7 @@ function start() {
     }else{
         p.innerHTML = `Start with player1` 
     }
+    document.body.style.backgroundImage = "none";
     document.body.style.backgroundColor = "black";
     player1.style.display = 'block';
     player2.style.display = 'block';
@@ -23,3 +24,4 @@ function start() {
     header.style.display = 'none';
     
 }
+//setTimeout(function(){p.style.display = "none"}, 2000);

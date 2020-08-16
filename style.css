@@ -1,6 +1,11 @@
-Body{
-    padding: 20px;
-    background-color: #1768AC;
+body{
+    padding: 0;
+    background-image: url(./images/dice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
 header{
@@ -15,36 +20,43 @@ header p{
     font-size: 25px;
 }
 header h1 span{
-    color: yellow;
+    color: #1768AC;
 }
 section{
     display: flex;
     margin: 10px;
-    margin-top: 10%;
-    margin-left: 25%;
+   margin-top: 5%;
+    margin-left: 20%;
     height: 0;
     }
+
+
 header button{
     margin-top: 5%;
     margin-left: 35%;
     height: 40px;
     width: 150px;
     font-size: 20px;
-    background-color: yellow;
+    background-color: #1768AC;
 }
 #player1{
     display: flex;
-    margin: 50px;
+    margin: 20px;
     flex-direction: column;
     display: none;
+    width: 50%;
+  
+  
 }
 #currentResult1{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin: 10px;
     font-size: 70px;
     color: white;
+    margin-left: -100px;
+   
 }
 #button1{
     width: 100px;
@@ -52,6 +64,7 @@ header button{
     margin: 10px;
     background-color: green;
     opacity: 0.5;
+  
 }
 #div1{
     color: green;
@@ -63,18 +76,21 @@ header button{
 }
 #player2{
     display: flex;
-    margin: 50px;
+    margin: 20px;
     flex-direction: column;
     display: none;
+    width: 50%;
     
 }
 #currentResult2{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
-   font-size: 60px;
+  
    text-align: center;
    color: white;
+   margin-left: -100px;
+   
 }
 #button2{
     width: 100px;
@@ -82,6 +98,7 @@ header button{
     margin: 10px;
     background-color: darkred;
     opacity: 0.5;
+    
 }
 #button1:hover, #button2:hover{
     opacity: 1;
@@ -106,7 +123,7 @@ header button{
     height: 500px;
     margin: 10px;
     font-size: 60px;
-    Color: rgb(255, 208, 0);
+    Color: white;;
     }
 #reset{
     width: 100px;
@@ -115,23 +132,25 @@ header button{
     display: none;
 }
 #reset:hover{
-    background-color: yellow;
+    background-color: #1768AC;
     
 }
 #p{
-   float: right;
+    margin-top: 0;
     font-size: 30px;
-    width: 300px;
-    height: 70px;
-    background-color: yellow;
-    padding: 1px;
-    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(243, 243, 8, 0.541);
     display: none;
-    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 1% ;
+   
 }
 
 
 @media only screen and (max-width: 600px){
+
     header button{
         margin-left: 25%;
         height: 40px;
@@ -148,14 +167,14 @@ header button{
         margin-top: 30%;
     }
     section{
-       margin-top: 20%;
-        margin-left: 20%;
+       margin-top: 35%;
+        margin-left: 10%;
     }
     #p{
         float: none;
          font-size: 25px;
-         width: 250px;
-         height: 30px;
+         width: 100%;
+         height: 50px;
       }
     #player1, #player2{
          margin: 10px;
@@ -167,15 +186,23 @@ header button{
         display: none;
     }
     #currentResult1{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         text-align: center;
-        margin: 10px;
+        margin: -10px;
         font-size: 30px;
         color: white;
+        margin-bottom: 30%;
     }
     #currentResult2{
-        font-size: 40px;
+        width: 150px;
+        height: 150px;
+            text-align: center;
+            margin: -10px;
+            font-size: 30px;
+            color: white;
+            margin-bottom: 30%;
+        
     }
     #div2{
         font-size: 40px;
