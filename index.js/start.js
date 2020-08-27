@@ -1,5 +1,6 @@
 
 function start() {
+
     const player1 = document.getElementById('player1');
     const player2 = document.getElementById('player2');
     const article = document.getElementById('article');
@@ -22,6 +23,7 @@ function start() {
     reset.style.display = "block";
     p.style.display = 'block';
     header.style.display = 'none';
+   
     
 }
 //setTimeout(function(){p.style.display = "none"}, 2000);
